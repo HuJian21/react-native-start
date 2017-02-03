@@ -4,6 +4,7 @@ import { Image, Text, StyleSheet } from 'react-native';
 import TabNaviagtor from 'react-native-tab-navigator';
 
 import Home from './views/Home'
+import Recommend from './views/Recommend'
 
 export default class Main extends Component {
     constructor(props) {
@@ -39,7 +40,7 @@ export default class Main extends Component {
                     // event
                     onPress={() => this.setState({selectedTab: 'recommend'})}
                 >
-                    <Text>i'm recommend</Text>
+                    <Recommend></Recommend>
                 </TabNaviagtor.Item>
 
                 <TabNaviagtor.Item

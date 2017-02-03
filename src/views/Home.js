@@ -37,6 +37,7 @@ export default class Home extends Component {
             this.setState({
                 dataSource: this.state.dataSource = this.state.dataSource.cloneWithPages(imageAry)
             })
+            console.log(this.state.dataSource);
         } catch (error) {
             console.error(error);
         }
